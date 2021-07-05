@@ -1,0 +1,181 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #7ba3b1;
+}
+
+main {
+    background-image: linear-gradient(to right bottom, #0286b3, darkblue), url();
+    width: calc(100vw - 30px * 2);
+    height: calc(100vh - 30px * 2);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    padding-top: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.container {
+    text-align: center;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.card__side--back-1 {
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("");
+}
+
+.card__side--back-2 {
+    background-image: linear-gradient(to right bottom, #0286b3, darkblue), url("");
+}
+
+.card__side--back-3 {
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("");
+}
+
+.container h1.heading-main {
+    color: #fff;
+    padding-bottom: 15px;
+    font-family: 'Times New Roman';
+    background-image: linear-gradient(to right bottom, #ffb900, #ff7730), url("");
+    border-radius: 100px;
+    max-width: 850px;
+    flex-grow: 1;
+    text-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    transform: scale(0.9);
+}
+
+.container .btn {
+    position: absolute;
+    top: 320px;
+    padding: 20px 50px;
+    border-radius: 50px;
+    font-size: 30px;
+    border: 5px solid white;
+    background-color: blue;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+    transition: ease-in-out .3s background-color;
+}
+.container .btn:hover {
+    background-color: rgb(0, 0, 139,0.6);
+    transform: translateY(-1px);
+}
+.container .btn:active {
+    transform: translateY(5px);
+}
+
+.container .year-box {
+    height: 52rem;
+    transition: all .8s ease-in-out;
+    position: absolute;
+    top: 200px;
+    width: 650px;
+    border-radius: 20px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+    background-image: linear-gradient(to right bottom, #2998ff, #5643fa), url("");
+    height: auto;
+    padding: 40px 100px;
+    border: 4px solid rgba(255, 255, 255, 0.25);
+}
+
+.container .year-box .space {
+    margin-bottom: 25px;
+}
+
+.container .year-box input {
+    width: 200px;
+    font-size: 27px;
+    float: right;
+    margin-right: 20px;
+    outline: none;
+    border: 1px solid #000;
+    border-radius: 2px;
+    padding: 3px 10px;
+    text-align: center;
+}
+
+.container .year-box label {
+    color: darkblue;
+    text-shadow: 1px 1px 10px rgba(255, 255, 255, 1);
+    float: left;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.container .year-box .close {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    cursor: pointer;
+    width: 32px;
+    height: 30px;
+    border-radius: 50px;
+    
+}
+.container .year-box .close span::after {
+    content: "";
+    background: #444;
+    height: 5px;
+    width: 30px;
+    display: block;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+.container .year-box .close span::before {
+    content: "";
+    background: #444;
+    height: 5px;
+    width: 30px;
+    display: block;
+    transform: rotate(-45deg);
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.container .year-box .btn-submit {
+    position: relative;
+    top: 0;
+    margin-top: 60px;
+    font-size: 20px;
+    padding: 15px 40px;
+    border: 3px solid white;
+}
+
+.container .result-year {
+    color: #eee;
+}
+
+.container .result-year h3 {
+    color: #ddd;
+}
+.hide {
+    display: none;
+}
+main .error {
+    position: absolute;
+    bottom: 20px;
+    right: 30px;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(0, 128, 128, 1);
+    padding: 10px 60px;
+    border-radius: 50px;
+    border: 1px solid ;
+}

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="shortcut icon" href="#" >
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <main>
+            <div class="container">
+                <h1 class="heading-main">
+                   Age App
+                </h1>
+                <button class="btn btn-start">start</button>
+                <div class="year-box hide">
+                    <form action="" class="calc-year">
+                        <label for="year">Year</label>
+                        <input id="year" type="text" maxlength="4" placeholder="YYYY" required>
+                        <br class="space">
+
+                        <label for="month" class="lable-med">Month</label>
+                        <input id="month" type="text" maxlength="2" placeholder="MM" required>
+                        <br class="space">
+
+                        <label for="day">Day</label>
+                        <input id="day" type="text" maxlength="2" placeholder="DD" required>
+                        <br>
+                        <button class="btn btn-submit">submit</button>
+                    </form>
+                    <div class="result-year hide">
+                        <h2>🏂 Your age is</h2>
+                        <h2 class="result">00</h2>
+                    </div>
+                    <div class="close">
+                        <span class="cspan"></span>
+                    </div>
+                </div>
+            </div>
+            <span class="error hide">error</span>
+        </main>
+        <script src="script.js"></script>
+    </body>
+</html>
